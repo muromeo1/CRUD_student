@@ -1,0 +1,12 @@
+<h1>Bem vindo!</h1>
+<form>
+	<h3>Alunos Cadastrados</h3>
+	<ul>
+		<% @students.each do |students| %>
+			<li>
+				<strong>Nome: </strong> <%= students[:name] %> &nbsp
+				<strong>Ra: </strong> <%= students[:ra] %>
+			</li> <br>
+		<% end %>
+	</ul>
+</form>
