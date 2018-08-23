@@ -8,17 +8,19 @@ class StudentsController < ApplicationController
 	end
 
 	def new
+		@students = Student.new
 	end
 
 	def create
 	end
 
 	def edit
+		@students = Student.find(params[:id])
 	end
 
 	def update
 	end
 
-	def update
+	def destroy
 	end
 end

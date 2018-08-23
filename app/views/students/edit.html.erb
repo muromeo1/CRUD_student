@@ -1,0 +1,26 @@
+<h1>Editar um aluno</h1>
+
+<%= form_for @students do |f| %>
+	<%= f.label :name, "Nome: " %>
+	<%= f.text_field :name %>
+	<%= f.label :ra, "RA: " %>
+	<%= f.text_field :ra %>
+	<%= f.submit %>
+<% end %>
+
+<!-- <h1>Editar um aluno</h1>
+<form action="/students/1" method="patch">
+	<table>
+		<tr>
+			<td>Nome: </td>
+			<td><input type="text" name="student[name]" value=""></td>
+		</tr>
+		<tr>
+			<td>RA: </td>
+			<td><input type="text" name="student[ra]"></td>
+		</tr>
+		<tr>
+			<td><input type="submit"></td>
+		</tr>
+	</table>
+</form> -->

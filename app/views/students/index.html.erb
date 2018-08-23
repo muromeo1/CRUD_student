@@ -4,8 +4,7 @@
 	<ul>
 		<% @students.each do |students| %>
 			<li>
-				<strong>Nome: </strong> <%= students[:name] %> &nbsp
-				<strong>Ra: </strong> <%= students[:ra] %>
+				<%= link_to students[:name], student_path(students) %>
 			</li> <br>
 		<% end %>
 	</ul>
