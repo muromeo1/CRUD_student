@@ -1,26 +1,3 @@
 <h1>Adicionar um aluno</h1>
-
-<%= form_for @students do |f| %>
-	<%= f.label :name, "Nome: " %>
-	<%= f.text_field :name %>
-	<%= f.label :ra, "RA: " %>
-	<%= f.text_field :ra %>
-	<%= f.submit %>
-<% end %>
-
-
-<!-- <form action="/students" method="post">
-	<table>
-		<tr>
-			<td>Nome: </td>
-			<td><input type="text" name="student[name]"></td>
-		</tr>
-		<tr>
-			<td>RA: </td>
-			<td><input type="text" name="student[ra]"></td>
-		</tr>
-		<tr>
-			<td><input type="submit"></td>
-		</tr>
-	</table>
-</form> -->
+<%= render "form" %>
+<%= link_to "Voltar", students_path %>

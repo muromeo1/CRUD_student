@@ -1,0 +1,15 @@
+<%= form_for @students do |f| %>
+<table>
+	<tr>
+		<td><%= f.label :name, "Nome: " %></td>
+		<td><%= f.text_field :name %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :ra, "RA: " %></td>
+		<td><%= f.text_field :ra %></td>
+	</tr>
+	<tr>
+		<td><%= f.submit %></td>
+	</tr>
+</table>
+<% end %>
