@@ -1,4 +1,3 @@
 == CRUD
 
-This is a simple crud made to study the basics of ROR.
-NOT USING SCAFFOLD!
+This is a simple crud (without de scaffold method) made to study the basics of ROR. 
